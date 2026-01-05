@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                     <div className="text-xl font-bold text-white tracking-tighter">
-                        Bx<span className="text-slate-500">On</span>.
+                        Bx<span className="text-brand-500">On</span>.
                     </div>
 
                     <div className="flex gap-6">

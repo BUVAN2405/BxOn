@@ -13,7 +13,7 @@ const Process = () => {
 
                 <div className="relative mt-16">
                     {/* Connecting Line (Desktop) */}
-                    <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-slate-800 -translate-y-1/2 z-0"></div>
+                    <div className="hidden md:block absolute top-20 left-0 w-full h-0.5 bg-slate-800 -translate-y-1/2 z-0"></div>
 
                     <div className="grid md:grid-cols-5 gap-8 relative z-10">
                         {processData.map((step, index) => (
