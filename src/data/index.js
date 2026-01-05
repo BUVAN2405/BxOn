@@ -1,4 +1,6 @@
 import { Code, Palette, Bot, Rocket, Shield, Zap, Globe, Cpu } from 'lucide-react';
+import eventBookingImg from '../assets/event-booking.png';
+import decorationManagementImg from '../assets/decoration_management.png';
 
 export const navLinks = [
     { name: 'Services', href: '#services' },
@@ -92,16 +94,16 @@ export const featuredProjectsData = [
         title: "Event Booking & Enquiry Platform",
         category: "Photography & Events",
         description: "A platform for booking events and enquiring about events.",
-        image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000",
-        link : " https://main.dugq2zqypncrh.amplifyapp.com/"
+        image: eventBookingImg,
+        link: " https://main.dugq2zqypncrh.amplifyapp.com/"
     },
     {
         id: 2,
         title: "GBT Decoration Management",
         category: "Event Management",
         description: "A platform for booking events and enquiring about events.",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
-        link:"https://main.d2q3f6tm28tqp5.amplifyapp.com/"
+        image: decorationManagementImg,
+        link: "https://main.d2q3f6tm28tqp5.amplifyapp.com/"
     },
 
 ];
@@ -117,7 +119,7 @@ export const ctaData = {
 };
 
 export const footerData = {
-    copyright: `© ${new Date().getFullYear()} Antigravity. All rights reserved.`,
+    copyright: `© ${new Date().getFullYear()} BxOn. All rights reserved.`,
     socials: [
         { name: "Twitter", href: "#" },
         { name: "LinkedIn", href: "https://www.linkedin.com/company/bxon16" },
