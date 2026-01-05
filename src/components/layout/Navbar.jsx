@@ -23,7 +23,7 @@ const Navbar = () => {
         >
             <div className="container mx-auto px-6 flex items-center justify-between">
                 <div className="text-2xl font-bold bg-clip-text text-white tracking-tighter">
-                    Bx<span className="text-brand-500">On</span>.
+                    Bx<span className="text-brand-500">On</span>
                 </div>
 
                 {/* Desktop Nav */}
