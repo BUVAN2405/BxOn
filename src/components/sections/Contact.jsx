@@ -5,7 +5,7 @@ import { contactData } from '../../data';
 import SectionHeading from '../ui/SectionHeading';
 import Button from '../ui/Button';
 import emailjs from '@emailjs/browser';
-// import { SECRET_KEY, PUBLIC_KEY, TEMPLATE_KEY } from '.env';
+
 
 const Contact = () => {
     const form = useRef();
@@ -27,7 +27,12 @@ const Contact = () => {
 
         // NOTE: Please replace these placeholders with your actual EmailJS Service ID, Template ID, and Public Key.
         // You can find these in your EmailJS dashboard: https://dashboard.emailjs.com/
-        emailjs.sendForm("process.env.SECURITY_KEY", "process.env.TEMPLATE_KEY", form.current, "process.env.PUBLIC_KEY")
+        emailjs.sendForm(
+            import.meta.env.VITE_SERVICE_ID,
+            import.meta.env.VITE_TEMPLATE_ID,
+            form.current,
+            import.meta.env.VITE_PUBLIC_KEY
+        )
             .then((result) => {
                 console.log(result.text);
                 setStatus('success');
